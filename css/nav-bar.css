@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Milker";
+  src: url(../fonts/Milker.otf) format(truetype);
+}
+
+li, a{
+    font-family: Milker;
+    font-size: 17px;
+    margin: 0;
+    padding: 0;
+    color: #fbfef9;
+    text-decoration: none;
+}
+
+header{
+    backdrop-filter: blur(45px);
+    background-color: #191923;
+    color: white;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 800;
+}
+
+.nav-bar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(45px);
+    background-color: #191923;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+    color: #0e79b2;
+    border-bottom: 4px solid #0e79b2;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolfhunt</title>
+    <link rel="stylesheet" href="./css/game.css">
+    <link rel="stylesheet" href="./css/nav-bar.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+<body>
+    
+    <div id="navbar"></div>
+
+    <section class="hero">
+            <div class="hero-content">
+                <img class="hero_image" src="./images/hero_valen.PNG" alt="hero_image">
+            </div>
+    </section>
+
+     <section class="description">
+        <div class="container">
+            <div class="description-content">
+                <img class="desc_image" src="../images/" alt="image">
+                <p class="desc_parag">En Wolfhunt eres una cazadora que vive cerca de una montaña en Alaska, tras un encuentro desafortunado con un lobo negro en el bosque deberás acudir al pueblo a reparar tus herramientas y volver a ponerte de pie para enfrentar a la bestia que te desafío y ganarle de una vez por todas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-content">
+
+                <span class="gall_text">GALLERY</span>
+                <div class="carousel-content">
+                    <button class="carousel-btn prev" id="prevBtn">
+                        <img src="../images/left_arrow.png" alt="Previous">
+                    </button>
+
+                    <div class="carousel-slide">
+                        <img src="../images/image_4.jpg" id="lastClone" alt="image">
+                        <img src="../images/image_1.png" alt="image">
+                        <img src="../images/image_2.png" alt="image">
+                        <img src="../images/image_3.jpg" alt="image">
+                        <img src="../images/image_4.jpg" alt="image">
+                        <img src="../images/image_1.png" id="firstClone" alt="image">
+                    </div>
+
+                    <button class="carousel-btn next" id="nextBtn">
+                        <img src="../images/right_arrow.png" alt="Previous">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <section class="footer-content">
+                <div class="foot-text">Wolfhunt</div>
+                <div class="foot-follow">
+                    <div id="follow">Follow us</div>
+                    <img src="../images" id="insta" onclick="redirectInsta()" alt="insta">
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="./js/game.js"></script>
+    <script src="./js/nav-bar.js"></script>
+    <script src="./js/footer.js"></script>
+</body>
+</html>
