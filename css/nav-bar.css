@@ -33,6 +33,10 @@ header{
     background-color: #191923;
 }
 
+.nav-bar img{
+    height: 45px;
+}
+
 .logo{
     cursor: pointer;
 }
