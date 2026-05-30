@@ -1,39 +1,71 @@
 @font-face {
   font-family: "Milker";
-  src: url(../fonts/Milker.otf) format(truetype);
+  src: url(../fonts/Milker.otf) format("opentype");
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url(../fonts/Montserrat.ttf)format(truetype);
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat.ttf) format("truetype");
 }
 
-.footer{
-    background-color: #191923;
-    color: #fbfef9;
-}
-#follow{
-    font-size: 20px;
-    font-family: Montserrat;
+.footer {
+  background-color: #191923;
+  color: #fbfef9;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
 
-.foot-text{
-    font-size: 30px;
-    font-family: Milker;
+.footer .container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-
-.footer-content, .foot-follow{
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.footer-content {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.foot-follow img{
-    height: 50px;
+.foot-text {
+  font-size: 22px;
+  font-family: Milker, sans-serif;
+  letter-spacing: 0.04em;
+  opacity: 0.9;
 }
 
-#insta{
-    padding-left: 2rem;
+.foot-follow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+#follow {
+  font-size: 13px;
+  font-family: Montserrat, sans-serif;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+.foot-follow img {
+  height: 28px;
+  opacity: 0.75;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.foot-follow img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    height: auto;
+    padding: 24px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
